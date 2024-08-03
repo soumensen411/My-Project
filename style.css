@@ -1,44 +1,52 @@
+*{
+  font-family: sans-serif;
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient();
+    padding: 0px 60px;
 }
-.cards {
-    perspective: 500px;
-  }
+.container{
+  padding: 10px 10px;
+  border-radius: 7px;
+  background-color: cadetblue;
+}
+.card-img img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.card-txt{
+
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+.name{
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.btn {
+  text-align: center;
+  padding: 10px 0px;
+
+}
+.btn button{
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid;
+  cursor: pointer;
+  color: white;
+}
+.add{
+  background-color:cornflowerblue;
   
-  .card {
-    width: 200px;
-    height: 250px;
-    background: #16161d;
-    border: 2px solid #555555;
-    border-radius: 4px;
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform .5s;
-  }
-  
-  .card:hover {
-    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
-  }
-  
-  .card_title {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    transition: transform .5s;
-    font: 700 1.5rem monospace;
-    text-shadow: -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-  }
-  
-  .card:hover .card_title {
-    transform: translateZ(50px);
-  }
+}
+.Remove{
+  background-color:gray;
+ margin-right: 26px;
+}
